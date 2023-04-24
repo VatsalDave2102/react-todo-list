@@ -1,42 +1,53 @@
+*{
+  padding:0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(95, 95, 95);
+  font-size: 16px;
+}
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-}
+  
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+body{
+  background-color: rgb(235, 229, 223);
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
+ .TodoContainer{
+  width: 420px;
+  background-color: white
+ }
+ .Date{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 40px;
+ }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+ .Date .today-date{
+  display: flex;
+ }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
+ .Date .today-date .digit-container{
+  font-weight: 900;
+  font-size: 2.6rem;
+  margin-right: 5px;
+ }
+ .Date .month-year-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ }
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
+ .Date .month-year-container .month{
+  font-size: 14px;
+  font-weight: bolder;
+ }
+ .Date .day{
+  font-weight: bolder;
+ }
