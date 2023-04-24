@@ -19,7 +19,8 @@ body{
  .TodoContainer{
   width: 420px;
   background-color: white;
-  padding: 50px 50px;
+  padding:50px;
+  padding-bottom: 0;
   box-shadow: 0px 5px 25px 2px gray;
  }
  .Date{
@@ -77,4 +78,37 @@ body{
   justify-content: space-between;
   align-items: center;
   margin: 30px 0;
+ }
+ .input-container{
+  position: relative;
+  padding: 30px 0;
+ }
+ .input-button{
+  position: absolute;
+  top: 55.5%;
+  left: 35.5%;
+  border-radius: 50%;
+  border: none;
+  background-color: rgba(80,227,164,255);
+  padding: 25px 25px;
+  cursor: pointer;
+  transition: 0.5s background-color;
+ }
+ .input-button:hover{
+  background-color:rgb(74, 74, 74) ;
+   
+ }
+ .plus{
+  font-size: 2.5rem;
+  color: rgba(70,188,138,255)
+ }
+.new-todo{
+  width: 100%;
+  visibility: hidden;
+  border: none;
+  border-bottom:1px solid rgb(95, 95, 95);
+  padding: 10px 0;
+ }
+ .new-todo:focus{
+  outline: none;
  }

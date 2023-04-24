@@ -15,7 +15,7 @@ export default function TodoItem({ task, isDone }) {
     return (
       <div className="item">
         <li>{task}</li>
-         <input type="image" src={greyLogo} height={30} />
+         <input type="image" src={greyLogo} height={30} style={{opacity: 0.7}}/>
       </div>
     );
   }
