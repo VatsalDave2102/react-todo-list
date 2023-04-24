@@ -2,9 +2,8 @@
   padding:0;
   margin: 0;
   box-sizing: border-box;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: rgb(95, 95, 95);
-  font-size: 16px;
+  font-size: 18px;
 }
 #root {
   max-width: 1280px;
@@ -19,22 +18,27 @@ body{
 }
  .TodoContainer{
   width: 420px;
-  background-color: white
+  background-color: white;
+  padding: 50px 50px;
+  box-shadow: 0px 5px 25px 2px gray;
  }
  .Date{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 50px 40px;
+  margin-bottom: 20px;
+  
  }
 
  .Date .today-date{
   display: flex;
+  align-items: center;
+  justify-content: center;
  }
 
  .Date .today-date .digit-container{
   font-weight: 900;
-  font-size: 2.6rem;
+  font-size: 2.8rem;
   margin-right: 5px;
  }
  .Date .month-year-container{
@@ -45,9 +49,32 @@ body{
  }
 
  .Date .month-year-container .month{
-  font-size: 14px;
+  font-size: 18px;
   font-weight: bolder;
+ }
+ .Date .month-year-container .year{
+  font-size: 16px;
  }
  .Date .day{
   font-weight: bolder;
+ }
+ .todo-list{
+  list-style: none;
+  max-height: 451px;
+  overflow-y: auto;
+  scrollbar-width: none;
+
+ }
+ .todo-list-overflow{
+ box-shadow: 0px -10px 20px -20px gray inset;
+  
+ }
+ .todo-list::-webkit-scrollbar{
+  display: none;
+ }
+ .todo-list .item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 0;
  }
